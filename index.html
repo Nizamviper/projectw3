@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>World Flavors Recipes</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <header>
+    <h1>Responsive Recipe Cards </h1>
+    <label for="cuisineFilter">Filter by Cuisine:</label>
+    <select id="cuisineFilter">
+      <option value="all">All</option>
+      <option value="japanese">Japanese</option>
+      <option value="french">French</option>
+      <option value="thai">Thai</option>
+    </select>
+  </header>
+
+  <main class="recipe-container">
+   <div class="recipe-card" data-cuisine="russian">
+  <img src="https://th.bing.com/th/id/R.9bdc05697b97f1aa7239bc0514bedf2f?rik=TCNqaP2CGU66vw&riu=http%3a%2f%2fchefjar.com%2fwp-content%2fuploads%2f2016%2f12%2fDSC_8411.jpg&ehk=v%2b93zR0yOSNuFg0xnsEWdjY9jM9tOjoH4uHqSo22uPg%3d&risl=&pid=ImgRaw&r=0" alt="Beef Stroganoff" />
+  <h2>Beef Stroganoff</h2>
+  <p class="description">Tender strips of beef in a rich mushroom and sour cream sauce, served over noodles or rice.</p>
+  <div class="rating">⭐⭐⭐⭐☆</div>
+  <button class="toggle-btn">Show Ingredients</button>
+  <div class="ingredients hidden">
+    <ul>
+      <li>Beef sirloin strips</li>
+      <li>Mushrooms</li>
+      <li>Onion, garlic</li>
+      <li>Sour cream & beef broth</li>
+    </ul>
+  </div>
+  <div class="instructions">
+    <h3>Preparation</h3>
+    <p>Sauté onions and mushrooms. Cook beef until browned. Stir in sour cream and broth, then simmer. Serve over egg noodles or rice.</p>
+  </div>
+</div>
+
+
+    <div class="recipe-card" data-cuisine="french">
+      <img src="   https://poshjournal.com/wp-content/uploads/2020/10/coq-au-vin-recipe-24.jpg" alt="Coq au Vin" />
+      <p class="description">Classic French chicken braised with wine, mushrooms, and herbs.</p>
+      <div class="rating">⭐⭐⭐⭐☆</div>
+      <button class="toggle-btn">Show Ingredients</button>
+      <div class="ingredients hidden">
+        <ul>
+          <li>Chicken thighs</li>
+          <li>Red wine</li>
+          <li>Carrots, onions, garlic</li>
+          <li>Bay leaves, thyme</li>
+        </ul>
+      </div>
+      <div class="instructions">
+        <h3>Preparation</h3>
+        <p>Brown chicken, add veggies and wine, and simmer until tender.</p>
+      </div>
+    </div>
+
+    <div class="recipe-card" data-cuisine="thai">
+      <img src="https://th.bing.com/th/id/OIP.6yHeMx-pT9gyVzdmgtnfhwHaLH?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" alt="Panang Curry" />
+      <h2>Panang Curry</h2>
+      <p class="description">Thai curry with rich coconut flavor and spicy kick.</p>
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+      <button class="toggle-btn">Show Ingredients</button>
+      <div class="ingredients hidden">
+        <ul>
+          <li>Panang curry paste</li>
+          <li>Coconut milk</li>
+          <li>Chicken or tofu</li>
+          <li>Kaffir lime leaves</li>
+        </ul>
+      </div>
+      <div class="instructions">
+        <h3>Preparation</h3>
+        <p>Simmer curry paste with coconut milk. Add protein and cook until done.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
